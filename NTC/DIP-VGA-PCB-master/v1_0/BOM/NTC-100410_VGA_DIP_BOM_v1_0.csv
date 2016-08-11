@@ -1,0 +1,17 @@
+quantity,reference_designator,item_number,item_name,revision,item_category,Package,Power Rating,Resistance,Tolerance
+ , ,100410,VGA_DIP PCB,1,Custom PCB assembly, , , , 
+5,"D1, D2, D3, D4, D5",100129,SMD DIODE BAT54S SOT-23,1,Diode, , , , 
+1,U1,100312,DS2431P+T&R,1,IC,6-TSOC, , , 
+2,"R3, R14",100385,RES SMD 2.1K OHM 1% 1/10W 0603,1,Resistor,603,1/10W,2.1K½,1%
+1,R8,100386,RES SMD 2.2K OHM 1% 1/10W 0603,1,Resistor,603,1/10W,2.2K½,1%
+3,"R4, R9, R15",100387,RES SMD 4.3K OHM 1% 1/10W 0603,1,Resistor,603,1/10W,4.3K½,1%
+3,"R1, R6, R12",100389,RES SMD 499 OHM 0.5% 0.15W 0603,1,Resistor,603,0.15,499½,0.50%
+3,"R5, R16, R10",100390,RES SMD 8.66K OHM 1% 1/10W 0603,1,Resistor,603,1/10W,8.66K½,1%
+3,"R22, R23, R19",100393,RES SMD 4.7K OHM 1% 1/10W 0603,1,Resistor,603,1/10W,4.7K½,1%
+2,"U13, U14",100401,SMT CONN HEADER VERT DUAL 40POS  GOLD,1,Jack, , , , 
+1,DB15,100405,"15 Position D-Sub,Female Sockets, SMT VGA Connector",1,Jack, , , , 
+3,"R2, R7, R13",100411,1.1K‘© RESISTOR Œ±1%,1,Resistor,603,1/10w,1.1K½,1%
+2,"R17, R18",100412,120‘© RESISTOR 0603 Œ±1%,1,Resistor,603,1/10w,120½,1%
+1,R11,100413,17.4K ‘© RESISTOR 0603 Œ±1%,1,Resistor,603,1/10w,17.4K½,1%
+1,SW,100425,TACTILE-SWITCH-K2-1114UA,1,Switch,, , , 
+DNP,"R20, R21",100426,DO NOT POPULATE,1,Resistor,603,1/10w,1K½,603
