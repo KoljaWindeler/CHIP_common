@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -24781,8 +24781,8 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <connect gate="G$1" pin="XIO-P2" pad="XIO-P2"/>
 <connect gate="G$1" pin="XIO-P3" pad="XIO-P3"/>
 <connect gate="G$1" pin="XIO-P4" pad="XIO-P4"/>
-<connect gate="G$1" pin="XIO-P5" pad="XIO-P6"/>
-<connect gate="G$1" pin="XIO-P6" pad="XIO-P5"/>
+<connect gate="G$1" pin="XIO-P5" pad="XIO-P5"/>
+<connect gate="G$1" pin="XIO-P6" pad="XIO-P6"/>
 <connect gate="G$1" pin="XIO-P7" pad="XIO-P7"/>
 <connect gate="G$1" pin="Y1" pad="Y1"/>
 <connect gate="G$1" pin="Y2" pad="Y2"/>
