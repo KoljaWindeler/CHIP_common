@@ -19,11 +19,11 @@ export DISPLAY=:0
 OUT=""
 
 # force ADC enable for battery voltage and current
-i2cset -y -f 0 0x34 0x82 0xC3
+/usr/sbin/i2cset -y -f 0 0x34 0x82 0xC3
 
 ################################
 #read Power OPERATING MODE register @01h
-POWER_OP_MODE=$(i2cget -y -f 0 0x34 0x01)
+POWER_OP_MODE=$(/usr/sbin/i2cget -y -f 0 0x34 0x01)
 #echo $POWER_OP_MODE
 
 CHARG_IND=$(($(($POWER_OP_MODE&0x40))/64))  # divide by 64 is like shifting rigth 6 times
@@ -33,8 +33,8 @@ if [ $BAT_EXIST -eq 1 ]; then :
 	OUT=$OUT"Battery "
 
 	#read battery voltage	79h, 78h	0 mV -> 000h,	1.1 mV/bit	FFFh -> 4.5045 V
-	BAT_VOLT_MSB=$(i2cget -y -f 0 0x34 0x78)
-	BAT_VOLT_LSB=$(i2cget -y -f 0 0x34 0x79)
+	BAT_VOLT_MSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x78)
+	BAT_VOLT_LSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x79)
 
 	#echo $BAT_VOLT_MSB $BAT_VOLT_LSB
 	# bash math -- converts hex to decimal so `bc` won't complain later...
@@ -53,8 +53,8 @@ if [ $BAT_EXIST -eq 1 ]; then :
 		#read Battery Charge Current	7Ah, 7Bh	0 mV -> 000h,	0.5 mA/bit	FFFh -> 1800 mA
 		#AXP209 datasheet is wrong, charge current is in registers 7Ah 7Bh
 		#(12 bits)
-		BAT_ICHG_MSB=$(i2cget -y -f 0 0x34 0x7A)
-		BAT_ICHG_LSB=$(i2cget -y -f 0 0x34 0x7B)
+		BAT_ICHG_MSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x7A)
+		BAT_ICHG_LSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x7B)
 
 		BAT_ICHG_BIN=$(( $(($BAT_ICHG_MSB << 4)) | $(($(($BAT_ICHG_LSB & 0x0F)) )) ))
 
@@ -65,8 +65,8 @@ if [ $BAT_EXIST -eq 1 ]; then :
 		#read Battery Discharge Current	7Ch, 7Dh	0 mV -> 000h,	0.5 mA/bit	1FFFh -> 1800 mA
 		#AXP209 datasheet is wrong, discharge current is in registers 7Ch 7Dh
 		#13 bits
-		BAT_IDISCHG_MSB=$(i2cget -y -f 0 0x34 0x7C)
-		BAT_IDISCHG_LSB=$(i2cget -y -f 0 0x34 0x7D)
+		BAT_IDISCHG_MSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x7C)
+		BAT_IDISCHG_LSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x7D)
 
 		BAT_IDISCHG_BIN=$(( $(($BAT_IDISCHG_MSB << 5)) | $(($(($BAT_IDISCHG_LSB & 0x1F)) )) ))
 
@@ -78,8 +78,8 @@ fi
 
 ###################
 #read internal temperature 	5eh, 5fh	-144.7c -> 000h,	0.1c/bit	FFFh -> 264.8c
-TEMP_MSB=$(i2cget -y -f 0 0x34 0x5e)
-TEMP_LSB=$(i2cget -y -f 0 0x34 0x5f)
+TEMP_MSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x5e)
+TEMP_LSB=$(/usr/sbin/i2cget -y -f 0 0x34 0x5f)
 
 # bash math -- converts hex to decimal so `bc` won't complain later...
 # MSB is 8 bits, LSB is lower 4 bits
@@ -90,7 +90,7 @@ OUT=$OUT$'\n'$TEMP_C"c "
 
 ###################
 #read fuel gauge B9h
-BAT_GAUGE_HEX=$(i2cget -y -f 0 0x34 0xb9)
+BAT_GAUGE_HEX=$(/usr/sbin/i2cget -y -f 0 0x34 0xb9)
 
 # bash math -- converts hex to decimal so `bc` won't complain later...
 # MSB is 8 bits, LSB is lower 4 bits
