@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22118,7 +22118,6 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 <wire x1="-1.4224" y1="0.8128" x2="1.4224" y2="0.8128" width="0.2032" layer="48"/>
 <wire x1="1.4224" y1="-0.8104" x2="1.4224" y2="0.8128" width="0.2032" layer="48"/>
 <wire x1="-1.4224" y1="-0.8104" x2="1.4224" y2="-0.8104" width="0.2032" layer="48"/>
-<wire x1="-1.4224" y1="-0.8104" x2="-1.4224" y2="0.8128" width="0.2032" layer="48"/>
 <wire x1="1.4732" y1="-0.8" x2="1.4732" y2="0.8128" width="0.2032" layer="21"/>
 <wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8128" width="0.2032" layer="21"/>
 <wire x1="-0.45" y1="0.8128" x2="0.4572" y2="0.8128" width="0.2032" layer="21"/>
@@ -22167,6 +22166,10 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 <vertex x="-0.254" y="0.84995"/>
 <vertex x="0.25" y="0.84995"/>
 </polygon>
+<wire x1="-1.905" y1="-1.905" x2="-2.032" y2="-1.778" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2.032" y1="-1.778" x2="-1.905" y2="-1.651" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.905" y1="-1.651" x2="-1.778" y2="-1.778" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-1.778" x2="-1.905" y2="-1.905" width="0.127" layer="21" curve="-90"/>
 </package>
 <package name="2X20CHIP_0.15MM_OFFSET_TH_08">
 <circle x="-20.415" y="-1.21" radius="0.2" width="0.3" layer="51"/>
