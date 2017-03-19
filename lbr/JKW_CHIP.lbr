@@ -23689,6 +23689,43 @@ Right angle package for the RHT03 / DHT-22 relative humidity and temperature sen
 <wire x1="3.81" y1="1.27" x2="3.81" y2="2.54" width="0.127" layer="21"/>
 <text x="0" y="12.5" size="1.27" layer="21" font="vector" rot="R90" align="center">&gt;VALUE</text>
 </package>
+<package name="SMD_SJ_2WAY_OPEN">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="0.635" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.016" x2="0.889" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.635" y1="-1.016" x2="0.889" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.889" y1="-0.762" x2="0.889" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="0.635" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.508" y1="0.127" x2="-0.508" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="SMD_SJ_2WAY_CLOSED">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="0.635" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.016" x2="0.889" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.635" y1="-1.016" x2="0.889" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.889" y1="-0.762" x2="0.889" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="0.635" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.508" y1="0.127" x2="-0.508" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SMD_SJ_3WAY_OPEN">
@@ -25007,6 +25044,23 @@ Symbol for the RHT03 / DHT-22 / AM2302 relative humidity and temperature sensor.
 <pin name="GND" x="-10.16" y="-7.62" length="middle" direction="pwr"/>
 <text x="-5.08" y="11.43" size="1.27" layer="94">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="SMD_SJ_2WAY_OPEN">
+<wire x1="-0.635" y1="-0.762" x2="0.635" y2="-0.762" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="0" y="-4.445" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="4.445" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="SMD_SJ_2WAY_CLOSED">
+<wire x1="-0.635" y1="-0.762" x2="0.635" y2="-0.762" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="0" y="-4.445" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="4.445" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -27080,6 +27134,42 @@ Note: The AM2302 is a wired version of the DHT-22 which typically requires less 
 <technology name="">
 <attribute name="PROD_ID" value="SEN-10167"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD_SJ_2WAY_CLOSED" prefix="SJ" uservalue="yes">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
+2 way solder jumper</description>
+<gates>
+<gate name="G$1" symbol="SMD_SJ_2WAY_CLOSED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CLOSED" package="SMD_SJ_2WAY_CLOSED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD_SJ_2WAY_OPEN" prefix="SJ" uservalue="yes">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
+2 way solder jumper</description>
+<gates>
+<gate name="G$1" symbol="SMD_SJ_2WAY_OPEN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD_SJ_2WAY_OPEN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
