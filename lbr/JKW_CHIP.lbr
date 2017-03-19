@@ -25048,19 +25048,23 @@ Symbol for the RHT03 / DHT-22 / AM2302 relative humidity and temperature sensor.
 <symbol name="SMD_SJ_2WAY_OPEN">
 <text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3" x="0" y="-4.1275" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="4.1275" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <wire x1="-0.635" y1="-0.28575" x2="0.635" y2="-0.28575" width="1.27" layer="94" curve="180" cap="flat"/>
 <wire x1="-0.635" y1="0.28575" x2="0.635" y2="0.28575" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.016" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="SMD_SJ_2WAY_CLOSED">
 <wire x1="-0.635" y1="-0.28575" x2="0.635" y2="-0.28575" width="1.27" layer="94" curve="180" cap="flat"/>
 <wire x1="-0.635" y1="0.28575" x2="0.635" y2="0.28575" width="1.27" layer="94" curve="-180" cap="flat"/>
 <text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3" x="0" y="-3.96875" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="3.96875" visible="off" length="short" direction="pas" rot="R270"/>
-<wire x1="0" y1="-0.79375" x2="0" y2="0.79375" width="0.254" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.79375" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.79375" x2="0" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
